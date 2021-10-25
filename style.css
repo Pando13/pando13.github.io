@@ -1,39 +1,58 @@
 *{padding:0; margin:0;}
+
 html {
-    height: 100%;
-    width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
 }
+
 body {
     background-color: #efdc7e;
     height: 100%;
     width: 100%;
 }
+
 .navbar {
+    border: 1px solid red;
     text-align: center;
     vertical-align: middle;
     padding: 50px;
 }
+
 .panda_box {
+    border: 1px solid #0030d9;
     width: 100%;
     height: 500px;
     position: relative;
 }
+
+.panda_square {
+    border: 1px solid #009406;
+    height: 100%;
+    width: 500px;
+    margin: auto;
+}
+
 .panda {
+    border: 1px solid #00ffd8;
     width: 500px;
     height: 100%;
     background-color: #f3f3f3;
-    border-radius: 50%;
+    border-radius: 100%;
     position: absolute;
     overflow: hidden;
 }
+
 .panda .body-shadow-1 {
+    border: 1px solid #ff1e1e;
     width: 500px;
-    height: 500px;
+    height: 100%;
     border-radius: 50%;
     position: absolute;
     box-shadow: 10px 15px 20px 15px #FFFFFF inset;
 }
+
 .panda .body-shadow-2 {
+    border: 1px solid #aa00ff;
      width: 500px;
      height: 500px;
      border-radius: 50%;
@@ -41,6 +60,7 @@ body {
      box-shadow: -20px -15px 25px 5px rgba(0, 0, 0, 0.2) inset;
      z-index: 2;
  }
+
 .panda .body-spot-1 {
     width: 110px;
     height: 100px;
@@ -50,6 +70,7 @@ body {
     top: 350px;
     box-shadow: 40px -50px 30px 5px rgba(255, 255, 255, 0.2) inset;
 }
+
 .panda .body-spot-2 {
     width: 150px;
     height: 150px;
@@ -60,6 +81,7 @@ body {
     left: 20px;
     box-shadow: 50px -75px 35px -20px rgba(255, 255, 255, 0.2) inset;
 }
+
 .panda__ear--left {
     width: 90px;
     height: 90px;
@@ -70,12 +92,14 @@ body {
     top: 20px;
     z-index: -1;
 }
+
 .panda__ear--left__shadow {
     width: 90px;
     height: 90px;
     border-radius: 50%;
     box-shadow: 8px 2px 10px 0px rgba(255, 255, 255, 0.5) inset;
 }
+
 .panda__ear--right {
     width: 90px;
     height: 90px;
@@ -86,12 +110,14 @@ body {
     top: 20px;
     z-index: -1;
 }
+
 .panda__ear--right__shadow {
     width: 90px;
     height: 90px;
     border-radius: 50%;
     box-shadow: -15px -5px 10px 0px rgba(255, 255, 255, 0.3) inset;
 }
+
 .panda__eye--left {
     position: absolute;
     width: 70px;
@@ -101,6 +127,7 @@ body {
     background-color: #000000;
     border-radius: 90% 40% 80%/100% 30% 80% 30%;
 }
+
 .panda__eye--right {
     position: absolute;
     width: 70px;
@@ -111,6 +138,7 @@ body {
     border-radius: 90% 40% 80%/100% 30% 80% 30%;
     transform: scale(-1, 1);
 }
+
 .panda__nose {
     width: 15px;
     height: 10px;
@@ -122,7 +150,9 @@ body {
     border-left: solid 15px transparent;
     border-right: solid 15px transparent;
 }
+
 .center-circle {
+    border: 1px solid #ff8000;
     width: 250px;
     height: 250px;
     position: absolute;
@@ -134,7 +164,9 @@ body {
     border-radius: 50%;
     background-color: #efdc7e;
 }
+
 .center-circle__shadow {
+    border: 1px solid #90ff09;
     box-shadow: 0px 3px 15px 6px rgba(0, 0, 0, 0.1);
     width: 250px;
     height: 250px;
@@ -146,19 +178,22 @@ body {
     bottom: 0;
     border-radius: 50%;
 }
+
 .ears {
     width: 500px;
     height: 500px;
     border-radius: 50%;
     position: absolute;
 }
+
 .ears .bottom-shadow {
+    border: 1px solid #543a22;
     width: 500px;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 450px;
     border-radius: 50%;
-    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
     z-index: -1;
 }
